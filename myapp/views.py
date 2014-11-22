@@ -1,8 +1,10 @@
 #coding=utf8
 
+from flask import render_template
+
 from . import app
 
 @app.route('/')
 @app.route('/index/')
 def index():
-	return 'index %s' % app.config['UPPER'] 
+	return render_template("index.html")
