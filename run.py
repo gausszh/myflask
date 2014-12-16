@@ -3,4 +3,6 @@
 from myapp import app
 
 if __name__ == '__main__':
-	app.run(debug=True)
+    # from myapp import db
+    # db.create_all()
+    app.run(debug=True)
