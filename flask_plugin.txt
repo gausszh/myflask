@@ -83,7 +83,7 @@ weber_utils               - Utilities for the Weber flask template
 hflossk                   - HFOSS course materials via flask
 tyron                     - Gevent redis/pubsub event notifier written in flask and gevent
 mimerender                - RESTful HTTP Content Negotiation for Flask, Bottle, web.py and webapp2 (Google App Engine)
-Flask-Stormpath           - Simple and secure user authentication for Flask via Stormpath.
+#Flask-Stormpath           - Simple and secure user authentication for Flask via Stormpath.
 Flask-WebCache            - A Flask extension that adds HTTP based caching to Flask apps
 Flask-Bcrypt              - Brcrypt hashing for Flask.
 flask-bouncer             - Flask Simple Declarative Authentication based on Ryan Bates excellent cancan library
@@ -91,7 +91,7 @@ flask-heroku              - Heroku environment variable configurations for Flask
 Erlenmeyer                - Automatically generate Flask servers from Core Data.
 Flask-paginate            - Simple paginate support for Flask
 Microbe                   - Micro Blog Engine inspired by Pelican and powered by Flask
-Flask-Injector            - Adds Injector, a Dependency Injection framework, support to Flask.
+#Flask-Injector            - Adds Injector, a Dependency Injection framework, support to Flask.
 Flask-Funnel              - Asset management for Flask.
 GitHub-Flask              - GitHub extension for Flask microframework
 Flask-Sijax               - An extension for the Flask microframework that adds Sijax support.
@@ -128,11 +128,11 @@ lever                     - A tool for exposing SQLAlchemy models in Flask via R
 Flask-DebugToolbar-LineProfilerPanel - Panel for the Flask Debug toolbar to capture and view line-by-line profiling stats
 Flask-Dropbox             - Dropbox Python SDK support for Flask applications.
 Flask-Mustache            - Mustache for Flask
-Flask-Collect             - Flask-Collect -- Collect static files in Flask application
+#Flask-Collect             - Flask-Collect -- Collect static files in Flask application
 FlaskWarts                - Assortment of various utilities for Flask applications
 Flask-PyMongo             - PyMongo support for Flask applications
 Flask-Moment              - Formatting of dates and times in Flask templates using moment.js.
-Flask-SuperAdmin          - The best admin interface framework for Python. With scaffolding for MongoEngine, Django and SQLAlchemy.
+#Flask-SuperAdmin          - The best admin interface framework for Python. With scaffolding for MongoEngine, Django and SQLAlchemy.
 Flask-Foundation          - An extension that includes the Foundation css framework in your project, without any boilerplate code.
 Flask-S3                  - Seamlessly serve the static files of your Flask app from Amazon S3
 paqmind.flask-views       - Class-based views for Flask
@@ -147,7 +147,7 @@ Flask-LazyViews           - Registers URL routes for Flask application or bluepr
 Flask-HTTPAuth            - Basic and Digest HTTP authentication for Flask routes
 Flask-WePay               - WePay API support
 pytest-flask              - A set of py.test fixtures to test Flask applications.
-Flask-LDAP                - Flask extension for LDAP auth and profile user
+#Flask-LDAP                - Flask extension for LDAP auth and profile user
 Flask-Debug               - Shows reflection/configuration to aid the development of Flask applications.
 Flask-Snooze              - Backend agnostic REST API provider for Flask
 Flask-CouchDBKit          - Flask extension that provides integration with CouchDBKit.
