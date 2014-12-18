@@ -1,24 +1,16 @@
+#!/usr/bin/env python
 #coding=utf8
-from flask.ext.sqlalchemy import SQLAlchemy
 
-db = SQLAlchemy()
+from sqlalchemy import create_engine
+from sqlalchemy.orm import scoped_session, sessionmaker
+from sqlalchemy.ext.declarative import declarative_base
 
+from myapp.configs import settings
 
-class User(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    username = db.Column(db.String(80), unique=True)
-    email = db.Column(db.String(120), unique=True)
+db_engine = create_engine(settings.DB_URI, encoding='utf8', 
+                          convert_unicode=True, echo=settings.DB_ECHO)       
 
-    def __init__(self, username, email):
-        self.username = username
-        self.email = email
+Session = scoped_session(sessionmaker(autocommit=False, autoflush=False, 
+                                      bind=db_engine))
 
-    def __repr__(self):
-        return '<User %r>' % self.username
-
-
-if __name__ == '__main__':
-    from myapp import app
-    db.init_app(app)
-
-    db.create_all()
+Base = declarative_base()

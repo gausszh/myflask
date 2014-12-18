@@ -1,19 +1,20 @@
 <html>
 <head>
-	<!-- 如果在utils.py 中已经定义过的文件，你可以直接使用 -->
-	{#
 	{% assets "all_js" %}
 		<script type="text/javascript" src="{{ASSET_URL}}"></script>
 	{% endassets %}
-	#}
-	<!-- 如果还没有定义，你还可以这样使用flask-assets  -->
-	{% assets "js/index.js", "js/test.js",  output="gen/js_in_tmpl.js"%}
-		<script type="text/javascript" src="{{ASSET_URL}}"></script>
-	{% endassets %}
+
+    {% assets "js/index.js", "js/test.js", output="gen/js_test.js", filters="yui_js" %}
+        <script type="text/javascript" src="{{ASSET_URL}}"></script>
+    {% endassets %}
 	<title>my flask</title>
 </head>
 <body>
-	{{ session.tt }}
-	<h2>{{request.args.name}}</h2>
+    <p>{{ok}}</p>
+    <form action="{{url_for('home.index')}}" method="POST"></form>
+        {{form.username.label}}:{{form.username(placeholder="yourname@mail.com")}} 
+        <br>
+        {{form.password.label}}:{{form.password}}
+        {{form.csrf_token}}
 </body>
 </html>
