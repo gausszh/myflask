@@ -4,3 +4,5 @@ UPPER = 1
 
 SECRET_KEY = 'sdhfv9we#%*yr8923rnskdf93^^&%@'
 SESSION_COOKIE_SECURE = True
+
+ASSETS_DEBUG = False

@@ -8,4 +8,5 @@ bundles = {
 }
 
 assets = Environment()
+# assets.
 assets.register(bundles)
